@@ -13,7 +13,7 @@ class MyServer(BaseHTTPRequestHandler):
     """
     def do_GET(self):
         """ Метод для обработки входящих GET-запросов """
-        with open('html файлы/Контакты.html', 'r', encoding="utf-8") as file:
+        with open('templates/contacts.html', 'r', encoding="utf-8") as file:
             html_content = file.read()
 
         self.send_response(200) # Отправка кода ответа
